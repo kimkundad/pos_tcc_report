@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 // POST Method
 
-app.post('/report', (req, res1) => {
+app.post('report', (req, res1) => {
   var data1 = null;
   //  res.send(req.body)
   req.on('data', chunk => {
@@ -66,11 +66,11 @@ app.post('/report', (req, res1) => {
 
   app.get("/get_invoice/:id", (req, res) => {
       
-    res.render(path.join(__dirname, 'invoice.html'), {id: req.params.id});
+    res.render(path.join(__dirname, '/invoice.html'), {id: req.params.id});
 
   });
 
-  app.get("/invoice/:id", (req, res) => {
+  app.get("invoice/:id", (req, res) => {
 
   axios.get('https://pos.thaibevapp.com/api/v1/report/History/'+req.params.id)
   .then(response => {
