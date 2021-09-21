@@ -12,7 +12,7 @@ const app = express();
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.listen(3030, () => {
+app.listen(3040, () => {
   console.log("Application started and Listening on port 3000");
 });
 
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 
 // POST Method
 
-app.post('report', (req, res1) => {
+app.post('/report', (req, res1) => {
   var data1 = null;
   //  res.send(req.body)
   req.on('data', chunk => {
@@ -54,9 +54,6 @@ app.post('report', (req, res1) => {
   req.on('end', () => {
     //end of data
   })
-
-  
-
 
 
 });
