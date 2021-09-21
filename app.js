@@ -67,7 +67,7 @@ app.post('/report', (req, res1) => {
 
   });
 
-  app.get("invoice/:id", (req, res) => {
+  app.get("/invoice/:id", (req, res) => {
 
   axios.get('https://pos.thaibevapp.com/api/v1/report/History/'+req.params.id)
   .then(response => {
