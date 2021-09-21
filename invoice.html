@@ -1,0 +1,438 @@
+<!doctype html>
+<html class="fixed sidebar-left-sm">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="UTF-8">
+
+		<title>Basic Tables | Porto Admin - Responsive HTML5 Template 2.0.0</title>
+		<meta name="keywords" content="HTML5 Admin Template" />
+		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="/vendor/animate/animate.css">
+
+		<link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="/vendor/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/css/theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="/css/skins/default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="/css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="/vendor/modernizr/modernizr.js"></script>
+
+		<style>
+			.form-control:focus {
+	border-color: #F16D22;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(236, 96, 21, 0.6);
+  }
+  .mar-b-15{
+    margin-bottom: 15px;
+  }
+  .bor_bot{
+    border-bottom: 1px solid #DADADA;
+  }
+  .bor_top{
+    border-top: 1px solid #DADADA;
+  }
+  .table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #fdfdfd;
+}
+.table thead th {
+    color: #000;
+    vertical-align: bottom;
+    border-bottom: 1px solid #e9ecef;
+}
+.col-fixed {
+  margin: 0 auto;
+  background-color: red;
+}
+@media (min-width: 768px) {
+  .col-fixed {
+    width: 500px;
+  }
+}
+		</style>
+
+	</head>
+	<body>
+		<section class="body">
+
+			<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="../" class="logo">
+						<img src="/img/promptKAI-logo.svg" width="120" height="33" alt="Porto Admin" />
+					</a>
+					<div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					
+			
+					<ul class="notifications">
+						
+						
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<span class="badge">3</span>
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="float-right badge badge-default">3</span>
+									Alerts
+								</div>
+			
+								<div class="content">
+									<ul>
+										<!-- <li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger text-light"></i>
+												</div>
+												<span class="title">Server is Down!</span>
+												<span class="message">Just now</span>
+											</a>
+										</li> -->
+										
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">View All</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+			
+					<span class="separator"></span>
+			
+					<div id="userbox" class="userbox">
+						<a href="/" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="/img/1484041341.png" alt="Joseph Doe" class="rounded-circle" data-lock-picture="img/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
+								<span class="name">ภัทร พูลเจริญ</span>
+								<span class="role">แคชเชียร์</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="pages-signin.html"><i class="fa fa-power-off"></i> Logout</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+				    <div class="sidebar-header">
+				        <div class="sidebar-title">
+				            Navigation
+				        </div>
+				        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+				            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				        </div>
+				    </div>
+				
+				    <div class="nano">
+				        <div class="nano-content">
+				            <nav id="menu" class="nav-main" role="navigation">
+				            
+				                <ul class="nav nav-main">
+				                    <li class=" nav-expanded nav-active">
+				                        <a class="nav-link " href="/">
+				                            <i class="fa fa-history" aria-hidden="true"></i>
+				                            <span>ประวัติการขาย</span>
+				                        </a>                        
+				                    </li>
+				                  
+				                 
+				                </ul>
+				            </nav>
+				
+				        
+							
+				
+				           
+							
+				        </div>
+				
+				        <script>
+				            // Maintain Scroll Position
+				            if (typeof localStorage !== 'undefined') {
+				                if (localStorage.getItem('sidebar-left-position') !== null) {
+				                    var initialPosition = localStorage.getItem('sidebar-left-position'),
+				                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+				                    
+				                    sidebarLeft.scrollTop = initialPosition;
+				                }
+				            }
+				        </script>
+				        
+				
+				    </div>
+				
+				</aside>
+				<!-- end: sidebar -->
+
+				<section role="main" class="content-body card-margin" style="padding-bottom: 250px;">
+					<header class="page-header">
+						<h2>ประวัติการขาย</h2>
+					
+						<div class="right-wrapper text-right">
+							<ol class="breadcrumbs">
+								<li>
+									<button type="button" class="hidden mb-1 mt-1 mr-1 btn btn-default"><i class="fa fa-sliders"></i> กรองรายการ</button>
+								</li>
+								
+							</ol>
+					
+							<a class="sidebar-right-toggle" ><i class="hidden fa fa-chevron-left"></i></a>
+						</div>
+					</header>
+
+					<!-- start: page -->
+						<div class="row justify-content-center">
+							<div class="col-md-12 text-center">
+								<section class="card col-fixed">
+									
+									<div class="card-body">
+										<p class="h5 text-center font-weight-semibold mar-b-15">บิลเงินสด</p>
+										
+                                        <div class="bor_bot">
+                                            <div class="row ">
+
+                                                <div class="col-6 text-left">
+                                                    เลขที่เอกสาร: <span id="invoice_no"></span>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    วันที่ขาย: <span id="invoice_date"></span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <table class="table table-responsive-md invoice-items bor_bot bor_top">
+                                            <thead>
+                                                <tr class="text-dark">
+                                                    <th id="cell-id" class="font-weight-semibold">ชิ้น</th>
+                                                    <th id="cell-item" class="font-weight-semibold">รายการ</th>
+                                                    <th id="cell-desc" class="font-weight-semibold">หน่วยละ</th>
+                                                    <th id="cell-price" class="text-right font-weight-semibold">รวมเงิน</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="result">
+                                                
+                                                
+                                            </tbody>
+                                        </table>
+
+                                        <div class="bor_bot mar-b-15">
+                                            <div class="row ">
+
+                                                <div class="col-6 text-left">
+                                                    รายการ : <span id="total_item"></span>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    จำนวนชิ้น : <span id="itemCount"></span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="bor_bot mar-b-15">
+                                            <div class="row ">
+
+                                                <div class="col-6 text-left">
+                                                    รวมเป็นเงิน
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <span id="amount"></span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    ส่วนลด
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <span id="discount"></span>
+                                                </div>
+                                                <div class="col-6 text-left">
+                                                    รวมทั้งสิ้น
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <span id="totalAmount"></span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="bor_bot mar-b-15">
+                                            <div class="row ">
+
+                                                <div class="col-6 font-weight-semibold">
+                                                    ชำระเงินโดย
+                                                </div>
+                                                <div class="col-6 text-right font-weight-semibold">
+                                                    เงินสด
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <p class="text-center">ขอบคุณ <br> Powered by promptKAI</p>
+
+										
+									</div>
+								</section>
+
+							
+
+							</div>
+							
+						</div>
+
+
+						
+						
+						
+					<!-- end: page -->
+				</section>
+
+
+				
+
+				
+			</div>
+
+			
+		</section>
+
+		<!-- Vendor -->
+		<script src="/vendor/jquery/jquery.js"></script>
+		<script src="/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="/vendor/popper/umd/popper.min.js"></script>
+		<script src="/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="/vendor/common/common.js"></script>
+		<script src="/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="/js/theme.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="/js/theme.init.js"></script>
+
+		<script>
+
+
+            var myParam = <%= id %>
+            console.log('--->',myParam)
+
+			var data1 = {
+					"keyword": "",
+					"page": 1,
+					"pageSize": 10,
+					"paymentType": [
+					"cash"
+					],
+					"status": [
+					2,3
+					],
+					"startDate": "2021-09-03 00:40:00",
+					"endDate": "2021-09-10 00:00:00"
+					};
+
+                    
+			$.ajax({
+                type: 'GET',
+                headers: {
+                    'Access-Control-Allow-Headers' : 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization',
+                    'Access-Control-Allow-Methods' : 'GET, POST, PUT, PATCH, DELETE, OPTIONS',
+                    'Access-Control-Allow-Origin' : '*',
+                    'Content-Type': 'application/json; charset=utf-8',
+                    'X-Api-Key': 'key-1',
+				},
+				url: '/invoice/'+myParam,
+                crossDomain: true,
+				dataType: 'json',
+                async: false,
+                jsonpCallback: 'jsonCallback',
+                contentType: "application/json",
+				success: function (response) {
+					
+                    console.log('data-->',response)
+				
+					var trHTML = '';
+					$('#invoice_no').html(response.invoiceId); 
+                    $('#invoice_date').html(response.temporaryInvoiceNo); 
+                    $('#total_item').html(response.itemProduct.length); 
+                    $('#itemCount').html(response.itemCount); 
+                    $('#amount').html(response.amount); 
+                    $('#totalAmount').html(response.totalAmount); 
+                    $('#discount').html(response.discount);
+                    
+                    for(var f=0;f<response.itemProduct.length;f++) {
+                        trHTML += '<tr>'+
+                                                    '<td>' + response.itemProduct[f]['quantity']+'</td>'+
+                                                    '<td class="">' + response.itemProduct[f]['productName']+'</td>'+
+                                                    '<td class="">฿ ' + response.itemProduct[f]['price']+'</td>'+
+                                                    '<td class="text-right">฿ ' + response.itemProduct[f]['amount']+'</td>'+
+                                                '</tr>';
+                    }
+                    $('#result').html(trHTML); 
+                    
+				}
+			});
+		</script>
+
+	</body>
+</html>
+
